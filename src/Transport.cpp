@@ -2466,7 +2466,7 @@ using namespace RNS::Utilities;
 /*static*/ void Transport::register_destination(Destination& destination) {
 	//TRACE("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
 	TRACE("Transport: Registering destination " + destination.toString());
-	destination.mtu(Type::Reticulum::MTU);
+	destination.mtu(Type::Reticulum::R_MTU);
 	if (destination.direction() == Type::Destination::IN) {
 #if defined(DESTINATIONS_SET)
 		for (auto& registered_destination : _destinations) {

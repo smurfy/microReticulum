@@ -46,7 +46,7 @@ namespace RNS { namespace Interfaces {
 
 	private:
 		const uint16_t HW_MTU = 1064;
-		//uint8_t buffer[Type::Reticulum::MTU] = {0};
+		//uint8_t buffer[Type::Reticulum::R_MTU] = {0};
 		Bytes _buffer;
 
 		// WiFi network name and password
